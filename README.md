@@ -7,14 +7,14 @@ The script simulates four vehicles starting from rest at a stop line and produce
 - `coordinated_cacc.gif` — centrally coordinated platoon (CACC) with smoother spacing and launch.
 - `stacked_comparison_en.gif` — a vertical side-by-side: top = CACC, bottom = worm effect.
 
-# What this shows
+ What this shows
 - **Worm effect:** Reaction delays propagate through the queue and create stop-and-go waves that slow discharge.
 - **CACC mitigation:** A simple spacing policy with feed-forward of the leader’s acceleration reduces amplification and shortens clearance time.
 
-# How it works
+ How it works
 - **Baseline:** Intelligent Driver Model with an explicit reaction delay. The leader reacts after a short delay; followers react to delayed states of the vehicle ahead.
 - **Coordinated:** A cooperative adaptive cruise controller uses a time-headway spacing target and PD terms on gap and relative speed, plus feed-forward of the leader’s acceleration.
 
-# Run
+ Run
 ```bash
 python traffic_platoon_sim.py
