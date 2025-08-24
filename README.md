@@ -5,7 +5,7 @@ A minimal Python demo of the traffic “worm/accordion” effect at a green ligh
 The script simulates four vehicles starting from rest at a stop line and produces three GIF animations:
 - `baseline_idm.gif` — human driving with reaction delay (IDM-based), showing the worm effect.
 - `coordinated_cacc.gif` — centrally coordinated platoon (CACC) with smoother spacing and launch.
-- `stacked_comparison_en.gif` — a vertical side-by-side: top = CACC, bottom = worm effect.
+- `stacked_comparison.gif` — a vertical side-by-side: top = CACC, bottom = worm effect.
 
  What this shows:
 - **Worm effect:** Reaction delays propagate through the queue and create stop-and-go waves that slow discharge.
